@@ -15,7 +15,6 @@ Executar: ```pnpm dev```
 ### Vitest
 
 O vitest é utilizado para fazer testes unitários tanto de partes lógicas quanto gráficas, além disso ele possui suporte a mocks.
-Infelizmente **ainda não será usado mock**
 
 ## Padrões
 
