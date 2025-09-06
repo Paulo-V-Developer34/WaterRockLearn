@@ -12,11 +12,14 @@ Executar: ```pnpm dev```
 
 ## Tecnologias
 
-...
+### Vitest
+
+O vitest é utilizado para fazer testes unitários tanto de partes lógicas quanto gráficas, além disso ele possui suporte a mocks.
+Infelizmente **ainda não será usado mock**
 
 ## Padrões
 
-- cammelCase para variáveis, funções, atributos e métodos
+- cammelCase para propriedades html, variáveis, funções, atributos e métodos
 - PascalCase para classes, namespaces, tipos e componentes
 - kebab-case para arquivos e pastas
 - SCREAMING_SNAKE_CASE para variáveis de ambiente
