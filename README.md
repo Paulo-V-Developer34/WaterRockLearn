@@ -10,6 +10,10 @@ Instalar dependências: ```pnpm i```
 Executar a seeding do banco de dados para inicia-lo com dados ```prisma ...```
 Executar: ```pnpm dev```
 
+## Debug
+
+Dentro do arquivo .vscode/launch.json há os comandos para o debug do Next.js, mas infelizmente apenas o server-side está funcionando por enquanto.
+
 ## Tecnologias
 
 ### Vitest
