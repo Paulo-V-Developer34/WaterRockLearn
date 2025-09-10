@@ -42,4 +42,10 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# my ignored files
+/codigos_descartados
+
+# prisma
 /app/generated/prisma
+
+

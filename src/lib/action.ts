@@ -18,7 +18,16 @@ export async function fakeCreateUser(
 ) {
     const userName = formData.get('userName') as string
 
-    if (!userName || userName.length < 3){ //aqui podemos substituir por outra verificação do Zod
+    if (!userName){
+        return {
+            message: 'Falha na validação do servidor',
+            errors: {
+                userName: ['userName não conseguiu ser enviado']
+            }
+        }
+    }
+
+    if (userName.length < 3){ //aqui podemos substituir por outra verificação do Zod
         return {
             message: 'Falha na validação do servidor',
             errors: {
