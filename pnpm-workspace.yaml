@@ -1,8 +1,13 @@
+packages:
+  - packages/*
+
 onlyBuiltDependencies:
   - '@prisma/client'
   - '@prisma/engines'
   - '@tailwindcss/oxide'
   - bcrypt
+  - core-js
+  - core-js-pure
   - esbuild
   - prisma
   - sharp
