@@ -2,46 +2,41 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introdução
 
-Let's discover **Docusaurus in less than 5 minutes**.
+O Water Rock Learn (WRL) foi projetado para ser um programa completo hospedado no Google Cloud com bom desempenho e experiência de usuário através do framework e bibliotecas utilizadas. Para isso foi utilizado o framework [Next.js](https://nextjs.org/) e as seguintes bibliotecas:
+- [Bcrypt](https://github.com/kelektiv/node.bcrypt.js)
+- [Zod](https://zod.dev/)
+- [Next Auth](https://next-auth.js.org/)
+- [React Hot Toast](https://react-hot-toast.com/)
+- [Shadcn Ui](https://ui.shadcn.com/)
+- [Testing Library](https://testing-library.com/)
+- [Vitest](https://vitest.dev/)
+- [Prisma ORM](https://www.prisma.io/orm)
+Vale resaltar que as dependencias dessas bibliotecas e do framework não foram citadas, como por exemplo o [React.js](https://pt-br.legacy.reactjs.org/) que é uma dependência do Next.js
 
-## Getting Started
+## Google Cloud
 
-Get started by **creating a new site**.
+O [Google Cloud Platform (GCP)]("https://cloud.google.com") oferece diversos serviços de nuvem, tanto para hospedar aplicações back-end quanto para treinar modelos de IA.
+Neste projeto ele hospedará o servidor Next.js, banco de dados, load balancer e IA caso seja utilizada.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## Bibliotecas e Ferramentas Utilizadas
 
-### What you'll need
+A explicação da utilização das bibliotecas será organizada da seguinte forma:
+- Design (Shadcn Ui e Figma)
+- Tipagem (Zod e TypeScript)
+- Banco de Dados (Prisma ORM e Google Cloud SQL)
+- Segurança (Bcrypt, Next Auth e Cloud Security)
+- Notificações (React Hot Toast, Cloud Run Functions e Cloud Pub/Sub)
+- Testes (Debbug, Testing Library e Vitest)
+- Design Patterns (SOLID, Factory, etc...)
+- Planejamento (Draw.io, Diagrama de Caso de Uso, UML, etc...)
+- Documentação (TypeDoc, Docusaurus)
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## Docusaurus
 
-## Generate a new site
+O docusaurus foi utilizado para realizar documentação técnica (esta que você está vendo agora) do que foi feito no projeto, como por exemplo o processo da criação da seed do banco de dados, todavia ele será mais bem apresentado na seção de planejamento. caso você esteja procurando os comandos para inicializar o projeto WRL e o banco de dados basta ir até o [README]("./devo/colocar/o/link/aqui/depois") do projeto.
 
-Generate a new Docusaurus site using the **classic template**.
+### Avisos
 
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+A documentação não será feita na ordem e pode demorar um pouco para ser feita, porquanto estou com um prazo apertado para fazer o projeto
