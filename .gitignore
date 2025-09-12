@@ -48,4 +48,5 @@ next-env.d.ts
 # prisma
 /app/generated/prisma
 
-
+# typedoc
+/doc

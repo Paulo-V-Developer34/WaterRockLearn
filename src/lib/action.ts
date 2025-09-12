@@ -1,3 +1,9 @@
+/**
+ * @fileoverview Ações dos formulários
+ * @author Paulo V N Cunha
+ * @version 1.0.0
+ */
+
 'use server'
 
 export type FormState = {
@@ -12,6 +18,12 @@ export type CreateUser = {
     password: string
 }
 
+/**
+ * Método para testar a criação de um usuário
+ * @param prevState - cache do formulário
+ * @param formData - dados do formulário
+ * @returns Resultado da criação
+ */
 export async function fakeCreateUser(
     prevState: FormState | undefined, //esses tipos devem ser iguais no useActionState
     formData: FormData
