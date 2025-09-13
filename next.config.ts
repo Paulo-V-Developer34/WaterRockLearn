@@ -13,6 +13,10 @@ const nextConfig: NextConfig = {
       test: /packages\//,
       loader: 'ignore-loader',
     });
+    config.module.rules.push({
+      test: /doc\//,
+      loader: 'ignore-loader',
+    });
 
     return config;
   },
