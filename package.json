@@ -12,6 +12,9 @@
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage"
   },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",
     "@prisma/client": "^6.15.0",

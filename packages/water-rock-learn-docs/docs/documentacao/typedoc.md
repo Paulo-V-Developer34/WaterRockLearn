@@ -13,7 +13,7 @@ pnpm typedoc
 ```
 
 ## Como documentar
-Para documentar você precisa usar comentários de multiplas linhas acima do seu código e usar as **tags** indicadas pelo TypeDoc, observe o exemplo:
+Para documentar foi necessário usar comentários de multiplas linhas acima do código e usar as **tags** indicadas pelo TypeDoc, observe o exemplo:
 ```TS
 /**
  * Classe principal da calculadora que implementa operações matemáticas básicas
