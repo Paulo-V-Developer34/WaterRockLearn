@@ -37,3 +37,8 @@ if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma
 
 export default prisma
 ```
+
+Caso você tenha a pasta prisma e o schema.prisma criados você deve executar o comando a seguir para gerar o cliente Prisma:
+```Bash
+prisma generate
+```
