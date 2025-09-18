@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Criando Tabelas e Configurando o ORM
 
-Essas etapas são muito simples, mas para configurações mais avançadas vá até o [site oficial]("https://www.prisma.io/docs/guides/nextjs")
+Essas etapas são muito simples, mas para configurações mais avançadas vá até o [site oficial](https://www.prisma.io/docs/guides/nextjs)
 
 ## Configurando
 

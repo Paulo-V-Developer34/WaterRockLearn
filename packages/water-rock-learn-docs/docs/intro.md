@@ -17,7 +17,7 @@ Vale resaltar que as dependencias dessas bibliotecas e do framework não foram c
 
 ## Google Cloud
 
-O [Google Cloud Platform (GCP)]("https://cloud.google.com") oferece diversos serviços de nuvem, tanto para hospedar aplicações back-end quanto para treinar modelos de IA.
+O [Google Cloud Platform (GCP)](https://cloud.google.com) oferece diversos serviços de nuvem, tanto para hospedar aplicações back-end quanto para treinar modelos de IA.
 Neste projeto ele hospedará o servidor Next.js, banco de dados, load balancer e IA caso seja utilizada.
 
 ## Bibliotecas e Ferramentas Utilizadas
