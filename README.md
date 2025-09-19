@@ -44,10 +44,8 @@ As tecnologias utilizadas foram:
 - [Prisma ORM](https://www.prisma.io/orm)
 Vale resaltar que as dependencias dessas bibliotecas e do framework não foram citadas, como por exemplo o [React.js](https://pt-br.legacy.reactjs.org/) que é uma dependência do Next.js
 
-Tanto as tecnologias quanto a documentação da criação do projeto estarão melhor explicadas na documentação feita usando Docusaurus, que está na pasta packages/water-rock-learn-docs. Para executá-lo cole o seguinte comando no terminal e clique no link que ele mostrar (possivelmente http://localhost:3000/):
-```Bash
-pnpm --filter water-rock-learn-docs docusaurus start
-```
+Tanto as tecnologias quanto a documentação da criação do projeto estarão melhor explicadas na documentação feita usando Docusaurus, que antigamente estava dentro deste repositorio como um workspace, mas atualmente está no repositório [WaterRockLearnDocs](https://github.com/Paulo-V-Developer34/WaterRockLearnDocs)
+
 ## Padrões
 
 - cammelCase para propriedades html, variáveis, funções, atributos e métodos

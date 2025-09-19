@@ -8,15 +8,6 @@ const nextConfig: NextConfig = {
       test: /codigos_descartados\//,
       loader: 'ignore-loader',
     });
-    // Adiciona uma regra para ignorar todos os arquivos dentro de uma pasta 'packages'
-    config.module.rules.push({
-      test: /packages\//,
-      loader: 'ignore-loader',
-    });
-    config.module.rules.push({
-      test: /doc\//,
-      loader: 'ignore-loader',
-    });
 
     return config;
   },
