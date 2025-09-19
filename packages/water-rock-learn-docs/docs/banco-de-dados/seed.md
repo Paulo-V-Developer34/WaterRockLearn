@@ -30,13 +30,18 @@ export async function main() {
 main();
 ```
 
-## Modificando o Package.json
+## Criando o prisma.config.ts
 
-Foi colocado um comando no package.json para executar a seed, sendo
-```Json
-"prisma": {
-    "seed": "tsx prisma/seed.ts"
-},
+Foi criado o arquivo `prisma.config.ts` na raiz do projeto para configurar a seed, contendo:
+```TS
+import type { PrismaConfig } from "prisma";
+
+//configurando o prisma
+export default {
+  migrations: {
+    seed: "tsx ./prisma/seed.ts"
+  }
+} satisfies PrismaConfig;
 ```
 
 ## Executando o prisma seed
