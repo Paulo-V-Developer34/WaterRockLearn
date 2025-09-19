@@ -11,9 +11,10 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@radix-ui/react-label"
 import { cn } from "@/lib/utils"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card"
-import { fakeCreateUser, FormState } from "@/lib/action"
+import { login } from "@/lib/action"
 import Image from "next/image"
 import { useActionState } from "react"
+import { type FormState } from "@/lib/types"
 // import { ... } from "toast"
 
 // Componente separado para o botão, para que ele possa usar useFormStatus
@@ -31,7 +32,7 @@ export function LoginForm({
     ...props
 }: React.ComponentProps<"div">) {
   const initialState: FormState = { message: '' };
-  const [errorMessage, formAction, isPending] = useActionState(fakeCreateUser, initialState);
+  const [errorMessage, formAction, isPending] = useActionState(login, initialState);
 
   return (
     // Passamos a 'formAction' retornada pelo hook para o formulário
@@ -72,7 +73,7 @@ export function LoginForm({
                     required
                   />
                 </div>
-                {errorMessage.errors?.userName && (
+                { errorMessage != undefined && errorMessage.errors?.userName && (
                     <p data-testid="errorResult" className="text-sm font-medium text-red-500 mt-2">
                     {errorMessage.errors.userName[0]}
                     </p>
@@ -98,7 +99,7 @@ export function LoginForm({
               </div>
             </div>
           </form>
-          {errorMessage.message && !errorMessage.errors && (
+          { errorMessage != undefined && errorMessage.message && !errorMessage.errors && (
             <p data-testid="result" className="text-sm font-medium text-green-500">{errorMessage.message}</p>
           )}
         </CardContent>
