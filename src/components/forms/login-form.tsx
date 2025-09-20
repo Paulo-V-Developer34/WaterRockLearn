@@ -15,6 +15,7 @@ import { login } from "@/lib/action"
 import Image from "next/image"
 import { useActionState } from "react"
 import { type FormState } from "@/lib/types"
+import { useSearchParams } from "next/navigation"
 // import { ... } from "toast"
 
 // Componente separado para o botão, para que ele possa usar useFormStatus
@@ -31,6 +32,8 @@ export function LoginForm({
     className,
     ...props
 }: React.ComponentProps<"div">) {
+  const searchParams = useSearchParams()
+  const callbackUrl = searchParams.get('callbackUrl') || '/dashboard/home'
   const initialState: FormState = { message: '' };
   const [errorMessage, formAction, isPending] = useActionState(login, initialState);
 
@@ -64,18 +67,18 @@ export function LoginForm({
               </div>
               <div className="grid gap-6">
                 <div className="grid gap-3">
-                  <Label htmlFor="userName">userName</Label>
+                  <Label htmlFor="email">email</Label>
                   <Input
-                    id="userName"
-                    type="userName"
-                    name="userName"
+                    id="email"
+                    type="email"
+                    name="email"
                     placeholder="m@example.com"
                     required
                   />
                 </div>
-                { errorMessage != undefined && errorMessage.errors?.userName && (
+                { errorMessage != undefined && errorMessage.errors?.err && (
                     <p data-testid="errorResult" className="text-sm font-medium text-red-500 mt-2">
-                    {errorMessage.errors.userName[0]}
+                    {errorMessage.errors.err[0]}
                     </p>
                 )}
                 <div className="grid gap-3">
@@ -93,6 +96,7 @@ export function LoginForm({
                     required 
                   />
                 </div>
+                <input type="hidden" name="redirectTo" value={callbackUrl}/>
                 <Button type="submit" className="w-full">
                   Login
                 </Button>

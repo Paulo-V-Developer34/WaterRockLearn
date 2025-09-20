@@ -16,7 +16,7 @@ export type MessageLogin = Message & {
 export type FormState = {
     message: string,
     errors?: {
-        userName: string[]
+        err: string[]
     }
 }
 
